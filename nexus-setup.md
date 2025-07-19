@@ -1,4 +1,4 @@
-**Step 1: Nexus Server Setup**
+- **Step 1: Nexus Server Setup**
 
 **1.1 Install Docker on VPS**
 
@@ -51,7 +51,7 @@ Below are the configured proxy repositories in Nexus Repository Manager used to 
 
 > ℹ️ All ports refer to the HTTP connector defined in Nexus. You can expose them via ingress, reverse proxy, or port-forwarding as needed.
 
-**Step 2: Client Configuration**
+- **Step 2: Client Configuration**
 
 **2.1 APT Clients (Debian/Ubuntu)**
 ```
@@ -92,7 +92,7 @@ deb http://<NEXUS_IP>:8081/repository/apt-proxy/ kubernetes-xenial main
   [plugins."io.containerd.grpc.v1.cri".registry.mirrors."registry.k8s.io"]  
     endpoint = ["http://<NEXUS_IP>:8083"]
 ```
-**Step 3: Kubernetes Installation Workflow**
+- **Step 3: Kubernetes Installation Workflow**
 
 **3.1 Install Kubernetes Components**
 
