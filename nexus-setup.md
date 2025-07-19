@@ -84,7 +84,7 @@ gpgcheck=0
 deb http://<NEXUS_IP>:8081/repository/apt-proxy/ kubernetes-xenial main
 ```
 **For Kubernetes images:**
-```
+```toml
 # /etc/containerd/config.toml  
 [plugins."io.containerd.grpc.v1.cri".registry.mirrors]  
   [plugins."io.containerd.grpc.v1.cri".registry.mirrors."docker.io"]  
