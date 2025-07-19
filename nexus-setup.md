@@ -37,7 +37,7 @@ docker-compose up -d
 
 3.Create repositories:
 
-## 🧩 Nexus Proxy Configuration
+##  Nexus Proxy Configuration
 
 Below are the configured proxy repositories in Nexus Repository Manager used to cache and serve different ecosystems:
 
@@ -49,7 +49,7 @@ Below are the configured proxy repositories in Nexus Repository Manager used to 
 | **Docker (proxy)**| `k8s-proxy`  | https://registry.k8s.io               | `8083`     |
 | **Helm (proxy)**  | `helm-proxy` | https://charts.helm.sh/stable         | `8081`     |
 
-> ℹ️ All ports refer to the HTTP connector defined in Nexus. You can expose them via ingress, reverse proxy, or port-forwarding as needed.
+>  All ports refer to the HTTP connector defined in Nexus. You can expose them via ingress, reverse proxy, or port-forwarding as needed.
 
 - **Step 2: Client Configuration**
 
